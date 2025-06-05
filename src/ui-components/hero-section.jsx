@@ -57,7 +57,7 @@ const HeroSection = () => {
             >
               Sm
               <Link href="https://www.youtube.com/@Hritiksmash" target="_blank">
-                <PiYoutubeLogoDuotone className="size-32 md:size-40 lg:size-48 text-red-400 hover:scale-105 hover:text-red-700 hover:-rotate-12 transition-all duration-300 ease-in-out" />
+                <PiYoutubeLogoDuotone className="size-32 md:size-40 lg:size-48 text-red-400 hover:scale-105 hover:text-red-700 -rotate-12 hover:-rotate-[20deg] transition-all duration-300 ease-in-out" />
               </Link>
               sh
             </motion.h2>
@@ -96,15 +96,18 @@ const HeroSection = () => {
                 delay: 0.8,
               },
             }}
-            className="text-gray-400 text-lg md:text-xl mt-5 font-black"
+            className="text-[#6ee7b7]/70 text-base md:text-lg mt-5 font-black"
           >
             Smashing Memories Since Day One.
           </motion.span>
         </div>
 
-        <div className="text-white absolute top-32 right-32 lg:right-48">
-          <SpinningText className="font-black text-xs lowercase" radius={7}>
-            Still Smashing. Still Us.
+        <div className="text-white absolute top-24 right-24 lg:right-28">
+          <SpinningText
+            className="font-sans text-xs lowercase text-red-200 tracking-tight"
+            radius={8}
+          >
+            Rewind. Reconnect. Relive.
           </SpinningText>
         </div>
       </div>

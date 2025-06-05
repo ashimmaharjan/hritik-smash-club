@@ -7,12 +7,14 @@ const AnimatedHeading = ({ title, subtitle }) => {
     <div>
       <motion.h2
         initial={{
-          scale: 0,
+          opacity: 0,
           filter: "blur(50px)",
+          y: 50,
         }}
         whileInView={{
-          scale: 1,
+          opacity: 1,
           filter: "blur(0px)",
+          y: 0,
           transition: {
             type: "spring",
             stiffness: 200,

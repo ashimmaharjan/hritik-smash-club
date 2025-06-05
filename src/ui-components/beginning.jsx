@@ -4,6 +4,7 @@ import AnimatedHeading from "./animatedHeading";
 import { Geist } from "next/font/google";
 
 import { motion } from "motion/react";
+import AnimatedParaText from "./animatedParagrphText";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -28,42 +29,27 @@ const Beginning = () => {
               stiffness: 200,
               damping: 20,
               duration: 0.3,
-              delay: 0.4,
+              delay: 0.1,
             },
           }}
-          className="col-span-1"
+          className="col-span-1 relative"
         >
           <Image
-            src="/images/clubhouse-image.jpeg"
+            src="/images/retro-origin.jpeg"
             alt="clubhouse image"
             width={700}
             height={700}
             quality={100}
             loading="lazy"
-            className="rounded-3xl border-[2px] border-gray-400 shadow-lg w-full max-h-[500px] object-cover relative"
+            className="rounded-3xl border-[4px] overflow-hidden border-lime-600 shadow-lg w-full max-h-[500px] lg:max-h-[530px] object-cover inverted-radius"
           />
-          <div className="absolute top-3 right-3 w-fit h-auto px-3 py-1.5 bg-lime-700 text-white text-xl rounded-xl shadow-2xl shadow-white border-2 border-white">
+          <div className="absolute top-1 right-3 size-24 flex justify-center items-center bg-lime-600 text-neutral-800 text-[16px] font-extrabold rounded-4xl shadow-2xl shadow-amber-200 border-2 border-white">
             Est. 2018
           </div>
         </motion.div>
 
         <div className="col-span-1 flex flex-col justify-center items-center text-justify px-3">
-          <motion.p
-            initial={{
-              opacity: 0,
-              filter: "blur(50px)",
-            }}
-            whileInView={{
-              opacity: 1,
-              filter: "blur(0px)",
-              transition: {
-                type: "tween",
-                duration: 0.3,
-                delay: 0.5,
-              },
-            }}
-            className={`${geist.className} text-neutral-400`}
-          >
+          <AnimatedParaText>
             In the aftermath of the great quake that shook the valley in April,
             when Kathmandu was still brushing off the dust of ruins and silence
             echoed through the alleys,{" "}
@@ -71,24 +57,9 @@ const Beginning = () => {
               something unexpected stirred
             </span>
             .
-          </motion.p>
+          </AnimatedParaText>
           <br />
-          <motion.p
-            initial={{
-              opacity: 0,
-              filter: "blur(50px)",
-            }}
-            whileInView={{
-              opacity: 1,
-              filter: "blur(0px)",
-              transition: {
-                type: "tween",
-                duration: 0.3,
-                delay: 0.6,
-              },
-            }}
-            className={`${geist.className} text-neutral-400`}
-          >
+          <AnimatedParaText>
             From the rubble of cracked walls and long days of recovery, a small
             band of friends — bored, restless, and full of mischief — discovered
             a strange new magic:{" "}
@@ -100,24 +71,9 @@ const Beginning = () => {
             <span className="text-neutral-100 font-semibold italic underline">
               It was a spark.
             </span>
-          </motion.p>
+          </AnimatedParaText>
           <br />
-          <motion.p
-            initial={{
-              opacity: 0,
-              filter: "blur(50px)",
-            }}
-            whileInView={{
-              opacity: 1,
-              filter: "blur(0px)",
-              transition: {
-                type: "tween",
-                duration: 0.3,
-                delay: 0.7,
-              },
-            }}
-            className={`${geist.className} text-neutral-400`}
-          >
+          <AnimatedParaText>
             What started as simple reenactments in front of flickering phone
             cameras quickly morphed into something wilder, richer. Scripted
             stories, inside jokes turned into short films, and suddenly, every
@@ -126,24 +82,9 @@ const Beginning = () => {
               We weren&apos;t just killing time — we were creating a world
             </span>
             , one punchline at a time.
-          </motion.p>
+          </AnimatedParaText>
           <br />
-          <motion.p
-            initial={{
-              opacity: 0,
-              filter: "blur(50px)",
-            }}
-            whileInView={{
-              opacity: 1,
-              filter: "blur(0px)",
-              transition: {
-                type: "tween",
-                duration: 0.3,
-                delay: 0.8,
-              },
-            }}
-            className={`${geist.className} text-neutral-400`}
-          >
+          <AnimatedParaText>
             From those humble days bloomed the{" "}
             <span className="text-neutral-100 font-semibold italic underline">
               Hritik Smash Club
@@ -155,30 +96,15 @@ const Beginning = () => {
             . We played games that felt like rituals, held night-outs that felt
             like quests, and built memories that would someday feel like
             legends.
-          </motion.p>
+          </AnimatedParaText>
           <br />
-          <motion.p
-            initial={{
-              opacity: 0,
-              filter: "blur(50px)",
-            }}
-            whileInView={{
-              opacity: 1,
-              filter: "blur(0px)",
-              transition: {
-                type: "tween",
-                duration: 0.3,
-                delay: 0.9,
-              },
-            }}
-            className={`${geist.className} text-neutral-400`}
-          >
+          <AnimatedParaText>
             We didn&apos;t know it back then, but{" "}
             <span className=" font-semibold italic underline text-neutral-100">
               in the cracks of a broken city, we had built our own sanctuary
             </span>
             .
-          </motion.p>
+          </AnimatedParaText>
         </div>
       </div>
     </section>

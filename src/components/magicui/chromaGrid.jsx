@@ -124,18 +124,18 @@ const ChromaGrid = ({
             />
           </div>
           <footer className="relative z-10 py-3 px-5 text-white grid grid-cols-[1fr_auto] gap-x-3 gap-y-0.5">
-            <h3 className="m-0 text-xl font-semibold">{c.title}</h3>
+            <h3 className="m-0 text-xl font-medium text-white">{c.title}</h3>
             {c.handle && (
-              <span className="text-[0.95rem] opacity-80 text-right font-extrabold">
+              <span className="text-[12px] opacity-50 text-right font-extrabold">
                 {c.handle}
               </span>
             )}
             <p className="m-0 text-sm opacity-85 text-emerald-400 font-black">
               {c.subtitle}
             </p>
-            {c.location && (
-              <span className="text-[0.85rem] opacity-85 text-right">
-                {c.location}
+            {c.icon && (
+              <span className="text-[24px] opacity-80 text-right ml-auto text-yellow-300">
+                {c.icon}
               </span>
             )}
           </footer>
