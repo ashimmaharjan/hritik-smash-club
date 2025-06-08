@@ -1,10 +1,10 @@
 import Image from "next/image";
 import AnimatedHeading from "./animatedHeading";
 
-import { Geist } from "next/font/google";
-
 import { motion } from "motion/react";
 import AnimatedParaText from "./animatedParagrphText";
+
+import { Geist } from "next/font/google";
 
 const geist = Geist({
   subsets: ["latin"],
