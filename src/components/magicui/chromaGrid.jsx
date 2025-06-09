@@ -86,16 +86,17 @@ const ChromaGrid = ({
       {data.map((c, i) => (
         <motion.article
           initial={{
+            opacity: 0,
             scale: 0,
             filter: "blur(50px)",
           }}
           whileInView={{
+            opacity: 1,
             scale: 1,
             filter: "blur(0px)",
             transition: {
               type: "tween",
               duration: 0.3,
-              delay: 0.1 + i * 0.05,
             },
           }}
           key={i}
